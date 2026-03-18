@@ -1,40 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forzora Labs</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NetPulse | Privacy Policy & Terms</title>
+  <meta name="description" content="Official Privacy Policy and Terms & Conditions for NetPulse by ForzoraLabs." />
   <style>
+    :root {
+      --bg: #081120;
+      --bg2: #0d1728;
+      --card: rgba(255, 255, 255, 0.08);
+      --card-border: rgba(255, 255, 255, 0.14);
+      --text: #eef4ff;
+      --muted: #afbdd6;
+      --primary: #5aa9ff;
+      --primary2: #7b61ff;
+      --accent: #19d3a6;
+      --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+      --radius: 24px;
+      --max-width: 1100px;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: #0f172a;
-      color: white;
-      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(90, 169, 255, 0.18), transparent 25%),
+        radial-gradient(circle at top right, rgba(123, 97, 255, 0.18), transparent 22%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+      line-height: 1.7;
     }
-    .box {
-      max-width: 700px;
-      padding: 30px;
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
     }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .hero {
+      padding: 70px 0 40px;
+    }
+
+    .hero-card {
+      background: linear-gradient(135deg, rgba(90, 169, 255, 0.16), rgba(123, 97, 255, 0.14));
+      border: 1px solid var(--card-border);
+      border-radius: 30px;
+      padding: 42px 28px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(25, 211, 166, 0.12);
+      border: 1px solid rgba(25, 211, 166, 0.25);
+      color: #9ff5df;
+      font-size: 0.9rem;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
     h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
+      margin: 0 0 12px;
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      line-height: 1.1;
     }
+
+    .subtitle {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 1.08rem;
+      margin-bottom: 22px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 24px;
+      margin: 26px auto 70px;
+    }
+
+    .toc,
+    .content {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .toc {
+      padding: 20px 16px;
+      position: sticky;
+      top: 18px;
+      height: fit-content;
+    }
+
+    .toc h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 1rem;
+    }
+
+    .toc a {
+      display: block;
+      padding: 10px 12px;
+      border-radius: 12px;
+      color: var(--muted);
+      margin-bottom: 6px;
+      transition: 0.2s ease;
+    }
+
+    .toc a:hover {
+      background: rgba(255,255,255,0.06);
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .content {
+      padding: 30px 26px;
+    }
+
+    section {
+      margin-bottom: 38px;
+      scroll-margin-top: 24px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.65rem;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.10);
+    }
+
+    h3 {
+      margin: 20px 0 10px;
+      font-size: 1.08rem;
+    }
+
     p {
-      font-size: 1.2rem;
-      color: #cbd5e1;
+      margin: 0 0 14px;
+      color: #dce7fb;
+    }
+
+    ul {
+      margin: 0 0 14px;
+      padding-left: 20px;
+      color: #dce7fb;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .note {
+      background: rgba(25, 211, 166, 0.08);
+      border-left: 4px solid var(--accent);
+      border-radius: 14px;
+      padding: 16px;
+      margin: 16px 0;
+      color: #ecfff9;
+    }
+
+    .footer {
+      padding: 0 0 50px;
+    }
+
+    .footer-card {
+      width: min(92%, var(--max-width));
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 24px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    .small {
+      font-size: 0.94rem;
+    }
+
+    @media (max-width: 900px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .toc {
+        position: static;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero-card,
+      .content,
+      .toc,
+      .footer-card {
+        padding: 20px 16px;
+      }
+
+      h2 {
+        font-size: 1.35rem;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h1>Forzora Labs</h1>
-    <p>Welcome to our GitHub Pages website.</p>
-  </div>
+
+  <header class="hero">
+    <div class="container">
+      <div class="hero-card">
+        <div class="badge">Official Legal Page</div>
+        <h1>NetPulse</h1>
+        <p class="subtitle">
+          Privacy Policy and Terms & Conditions for <strong>NetPulse</strong>, a free internet speed testing app provided by <strong>ForzoraLabs</strong>.
+          NetPulse is used to measure internet performance such as <strong>download speed</strong>, <strong>upload speed</strong>, and <strong>ping</strong>.
+        </p>
+        <div class="meta">
+          <span><strong>Provider:</strong> ForzoraLabs</span>
+          <span><strong>App:</strong> NetPulse</span>
+          <span><strong>Effective Date:</strong> March 18, 2026</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="layout">
+      <aside class="toc">
+        <h3>Contents</h3>
+        <a href="#privacy-policy">Privacy Policy</a>
+        <a href="#information-collection">1. Information We Collect</a>
+        <a href="#permission-use">2. Permission Used</a>
+        <a href="#how-app-works">3. How NetPulse Works</a>
+        <a href="#data-sharing">4. Data Sharing</a>
+        <a href="#children-privacy">5. Children's Privacy</a>
+        <a href="#policy-changes">6. Changes to This Policy</a>
+        <a href="#terms">Terms & Conditions</a>
+        <a href="#acceptance">7. Acceptance of Terms</a>
+        <a href="#app-use">8. Use of the App</a>
+        <a href="#limitations">9. Limitations and Disclaimer</a>
+        <a href="#termination">10. Termination</a>
+        <a href="#contact">11. Contact</a>
+      </aside>
+
+      <div class="content">
+        <section id="privacy-policy">
+          <h2>Privacy Policy</h2>
+          <p>
+            This Privacy Policy explains how <strong>ForzoraLabs</strong> handles information in relation to the <strong>NetPulse</strong> application.
+            NetPulse is a free app designed to test and display internet performance, including download speed, upload speed, and ping.
+          </p>
+          <div class="note">
+            NetPulse does <strong>not collect, store, sell, or share personal data from users</strong>.
+          </div>
+        </section>
+
+        <section id="information-collection">
+          <h2>1. Information We Collect</h2>
+          <p>
+            NetPulse does not collect personal information from users.
+          </p>
+          <p>
+            The app does not require account creation, does not request names, email addresses, phone numbers, identification details,
+            payment information, or location data, and does not store personal usage data on external servers.
+          </p>
+          <p>
+            NetPulse is built to perform internet speed measurement only. Its main purpose is to test network performance by checking
+            values such as download speed, upload speed, and ping on the user's device.
+          </p>
+        </section>
+
+        <section id="permission-use">
+          <h2>2. Permission Used</h2>
+          <p>
+            NetPulse only requests one permission:
+          </p>
+          <ul>
+            <li><strong>Post Notifications</strong> — this permission is used only to show notifications related to the operation of the app where needed.</li>
+          </ul>
+          <p>
+            This permission is not used to collect user information. It is only used so the app can properly display notifications on supported Android versions.
+          </p>
+        </section>
+
+        <section id="how-app-works">
+          <h2>3. How NetPulse Works</h2>
+          <p>
+            NetPulse works by performing internet speed tests on the device. During a test, the app measures:
+          </p>
+          <ul>
+            <li><strong>Download speed</strong> — how fast data is received from the internet</li>
+            <li><strong>Upload speed</strong> — how fast data is sent to the internet</li>
+            <li><strong>Ping</strong> — the response time between the device and a network server</li>
+          </ul>
+          <p>
+            These measurements are used only to display speed test results to the user inside the app. NetPulse does not create user profiles and does not track users for advertising or personal analytics.
+          </p>
+        </section>
+
+        <section id="data-sharing">
+          <h2>4. Data Sharing</h2>
+          <p>
+            Since NetPulse does not collect personal user data, it does not sell or share personal information with third parties.
+          </p>
+          <p>
+            ForzoraLabs does not use the app to trade user information, and no personal data is processed for marketing purposes.
+          </p>
+        </section>
+
+        <section id="children-privacy">
+          <h2>5. Children's Privacy</h2>
+          <p>
+            NetPulse does not knowingly collect personal information from children or from any users. Since the app does not collect user data,
+            there is no intentional collection of children's personal data.
+          </p>
+        </section>
+
+        <section id="policy-changes">
+          <h2>6. Changes to This Policy</h2>
+          <p>
+            ForzoraLabs may update this Privacy Policy from time to time if the app changes in the future. Any updates will be posted on this page with a revised effective date.
+          </p>
+        </section>
+
+        <section id="terms">
+          <h2>Terms & Conditions</h2>
+          <p>
+            These Terms & Conditions govern the use of <strong>NetPulse</strong>. By downloading, installing, or using the app, you agree to these terms.
+          </p>
+        </section>
+
+        <section id="acceptance">
+          <h2>7. Acceptance of Terms</h2>
+          <p>
+            By using NetPulse, you confirm that you accept these Terms & Conditions and agree to use the app only for lawful purposes.
+          </p>
+        </section>
+
+        <section id="app-use">
+          <h2>8. Use of the App</h2>
+          <p>
+            NetPulse is provided free of charge for measuring internet speed and related performance metrics.
+          </p>
+          <p>You agree not to:</p>
+          <ul>
+            <li>Use the app for unlawful or harmful purposes</li>
+            <li>Attempt to interfere with the normal operation of the app</li>
+            <li>Copy, modify, or redistribute the app in a way not permitted by law</li>
+            <li>Attempt to reverse engineer the app except where allowed by applicable law</li>
+          </ul>
+        </section>
+
+        <section id="limitations">
+          <h2>9. Limitations and Disclaimer</h2>
+          <p>
+            NetPulse is provided on an <strong>"as is"</strong> and <strong>"as available"</strong> basis. While ForzoraLabs aims to make the app reliable and useful,
+            there is no guarantee that the app will always operate without interruption or error.
+          </p>
+          <p>
+            Internet speed results may vary depending on network conditions, device capability, service provider behavior, server conditions,
+            and other environmental factors. For this reason, the measured values shown by NetPulse should be understood as test results based on current conditions,
+            not as permanent or guaranteed network values.
+          </p>
+        </section>
+
+        <section id="termination">
+          <h2>10. Termination</h2>
+          <p>
+            ForzoraLabs may update, suspend, or discontinue NetPulse or parts of its functionality at any time if necessary for technical,
+            operational, or legal reasons.
+          </p>
+        </section>
+
+        <section id="contact">
+          <h2>11. Contact</h2>
+          <p>
+            If you have questions about this Privacy Policy or these Terms & Conditions, you may contact:
+          </p>
+          <ul>
+            <li><strong>Provider:</strong> ForzoraLabs</li>
+            <li><strong>App:</strong> NetPulse</li>
+            <li><strong>Email:</strong> support@forzoralabs.com</li>
+          </ul>
+          <div class="note">
+            Replace the email above with your real support email before publishing.
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-card">
+      <p><strong>NetPulse</strong> — Provided by <strong>ForzoraLabs</strong></p>
+      <p class="small">Effective Date: March 18, 2026</p>
+      <p class="small">© 2026 ForzoraLabs. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
